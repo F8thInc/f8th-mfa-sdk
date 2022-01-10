@@ -11,10 +11,10 @@
 Create the `F8th` object by passing the user ID if the user is already authenticated as below. You should instantiate the F8th object as soon as possible, this allows the inputs of the user to be tracked so when you make a request for a prediction, it can check those inputs to see whether the current user is who they claim to be. When you are ready to make a prediction, use the AuthCheck function.
    ```C#
     //example without an user logged in
-    F8th f8th = new F8th(bool isEnabled, string apiKey, string apiUrl, string branchId);
+    F8th f8th = new F8th(bool isEnabled, string apiKey, string apiUrl, string branchId, string DcUrl);
 
     //example with an user logged in
-    F8th f8th = new F8th(bool isEnabled, string apiKey, string apiUrl, string branchId, string userId);
+    F8th f8th = new F8th(bool isEnabled, string apiKey, string apiUrl,  string branchId, string DcUrl, string userId);
    ```
 
  ## A Word on the Data Collector
